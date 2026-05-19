@@ -290,7 +290,7 @@ struct NewLogEntryView: View {
         log.locationType = locationType.rawValue
         log.activities = activities
         log.notes = notes
-        log.isFlagged = isFlagged
+        log.isFlagged = NSNumber(value: isFlagged)
         log.flagReason = isFlagged ? flagReason : nil
         log.status = status.rawValue
         log.updatedAt = Date()
