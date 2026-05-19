@@ -1,12 +1,15 @@
 import UIKit
 import PDFKit
+import SwiftUI
+import UniformTypeIdentifiers
 
 struct PDFExport: Transferable {
     let data: Data
     let filename: String
 
     static var transferRepresentation: some TransferRepresentation {
-        DataRepresentation(exportedContentType: .pdf) { $0.data }
+        DataRepresentation(exportedContentType: UTType.pdf) { $0.data }
+            .suggestedFileName { $0.filename }
     }
 }
 

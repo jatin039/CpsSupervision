@@ -29,7 +29,8 @@ class SharingService: ObservableObject {
     }
 
     func isShared(_ child: Child) -> Bool {
-        stack.container.isRecord(forManagedObjectID: child.objectID) != nil
+        (try? stack.container.viewContext.existingObject(with: child.objectID)) != nil
+            && activeShare != nil
     }
 }
 
