@@ -1,0 +1,68 @@
+name: CpsSupervision
+
+options:
+  bundleIdPrefix: com.cpssupervision
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  defaultConfig: Debug
+
+targets:
+  CpsSupervision:
+    type: application
+    platform: iOS
+    sources:
+      - path: CpsSupervision
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cpssupervision.app
+        SWIFT_VERSION: "5.9"
+        INFOPLIST_FILE: CpsSupervision/Info.plist
+        CODE_SIGN_ENTITLEMENTS: CpsSupervision/CpsSupervision.entitlements
+        DEVELOPMENT_TEAM: ""
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ENABLE_PREVIEWS: "YES"
+    info:
+      path: CpsSupervision/Info.plist
+      properties:
+        CFBundleDisplayName: CPS Supervision
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        NSFaceIDUsageDescription: Protect sensitive supervision records with Face ID
+        NSCameraUsageDescription: Take photos during supervision sessions
+        NSPhotoLibraryUsageDescription: Attach photos from your library to supervision logs
+        UILaunchScreen:
+          UIColorName: systemBackground
+        UIApplicationSupportsMultipleScenes: false
+        CKSharingSupported: true
+
+  CpsSupervisionTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: CpsSupervisionTests
+    dependencies:
+      - target: CpsSupervision
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cpssupervision.tests
+        SWIFT_VERSION: "5.9"
+
+schemes:
+  CpsSupervision:
+    build:
+      targets:
+        CpsSupervision: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - name: CpsSupervisionTests
+          parallelizable: true
+    profile:
+      config: Release
+    archive:
+      config: Release
