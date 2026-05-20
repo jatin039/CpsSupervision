@@ -88,17 +88,17 @@ struct LogListView: View {
     private var filterMenu: some View {
         Menu {
             Section("Status") {
-                Button { viewModel.filterStatus = "all" } label: {
-                    Label("All", systemImage: viewModel.filterStatus == "all" ? "checkmark" : "")
+                filterButton("All", value: "all", current: viewModel.filterStatus) {
+                    viewModel.filterStatus = "all"
                 }
-                Button { viewModel.filterStatus = Constants.LogStatus.draft.rawValue } label: {
-                    Label("Draft", systemImage: viewModel.filterStatus == "draft" ? "checkmark" : "")
+                filterButton("Draft", value: Constants.LogStatus.draft.rawValue, current: viewModel.filterStatus) {
+                    viewModel.filterStatus = Constants.LogStatus.draft.rawValue
                 }
-                Button { viewModel.filterStatus = Constants.LogStatus.submitted.rawValue } label: {
-                    Label("Submitted", systemImage: viewModel.filterStatus == "submitted" ? "checkmark" : "")
+                filterButton("Submitted", value: Constants.LogStatus.submitted.rawValue, current: viewModel.filterStatus) {
+                    viewModel.filterStatus = Constants.LogStatus.submitted.rawValue
                 }
-                Button { viewModel.filterStatus = Constants.LogStatus.reviewed.rawValue } label: {
-                    Label("Reviewed", systemImage: viewModel.filterStatus == "reviewed" ? "checkmark" : "")
+                filterButton("Reviewed", value: Constants.LogStatus.reviewed.rawValue, current: viewModel.filterStatus) {
+                    viewModel.filterStatus = Constants.LogStatus.reviewed.rawValue
                 }
             }
             Section("Concerns") {
@@ -107,11 +107,17 @@ struct LogListView: View {
             if !children.isEmpty {
                 Section("Child") {
                     Button { viewModel.selectedChildID = nil } label: {
-                        Label("All children", systemImage: viewModel.selectedChildID == nil ? "checkmark" : "")
+                        HStack {
+                            Text("All children")
+                            if viewModel.selectedChildID == nil { Image(systemName: "checkmark") }
+                        }
                     }
                     ForEach(children) { child in
                         Button { viewModel.selectedChildID = child.objectID } label: {
-                            Label(child.wrappedName, systemImage: viewModel.selectedChildID == child.objectID ? "checkmark" : "")
+                            HStack {
+                                Text(child.wrappedName)
+                                if viewModel.selectedChildID == child.objectID { Image(systemName: "checkmark") }
+                            }
                         }
                     }
                 }
@@ -119,6 +125,15 @@ struct LogListView: View {
         } label: {
             Image(systemName: hasActiveFilters ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
                 .foregroundStyle(hasActiveFilters ? .blue : .primary)
+        }
+    }
+
+    private func filterButton(_ title: String, value: String, current: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack {
+                Text(title)
+                if current == value { Image(systemName: "checkmark") }
+            }
         }
     }
 
