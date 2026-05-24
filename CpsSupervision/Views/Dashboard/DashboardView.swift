@@ -5,6 +5,7 @@ struct DashboardView: View {
     @Environment(\.managedObjectContext) private var ctx
     @StateObject private var viewModel: DashboardViewModel
     @State private var showNewLog = false
+    @State private var showAddChild = false
 
     @FetchRequest(
         sortDescriptors: [SortDescriptor(\SupervisionLog.startTime, order: .reverse)],
@@ -41,16 +42,16 @@ struct DashboardView: View {
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
-                    Button { showNewLog = true } label: {
+                    Button {
+                        if children.isEmpty { showAddChild = true } else { showNewLog = true }
+                    } label: {
                         Image(systemName: "plus.circle.fill")
                             .font(.title2)
                     }
-                    .disabled(children.isEmpty)
                 }
             }
-            .sheet(isPresented: $showNewLog) {
-                NewLogEntryView()
-            }
+            .sheet(isPresented: $showNewLog) { NewLogEntryView() }
+            .sheet(isPresented: $showAddChild) { AddChildView() }
         }
     }
 
@@ -121,12 +122,29 @@ struct DashboardView: View {
     }
 
     private var emptyState: some View {
-        ContentUnavailableView(
-            "Get Started",
-            systemImage: "person.badge.plus",
-            description: Text("Add a child profile in the People tab to start logging supervision sessions")
-        )
-        .frame(height: 240)
+        VStack(spacing: 20) {
+            Image(systemName: "person.badge.plus")
+                .font(.system(size: 52))
+                .foregroundStyle(.blue.opacity(0.7))
+            VStack(spacing: 6) {
+                Text("Get Started")
+                    .font(.title2.bold())
+                Text("Add a child profile to begin logging supervision sessions.")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+            }
+            Button { showAddChild = true } label: {
+                Label("Add Child Profile", systemImage: "plus")
+                    .font(.headline)
+                    .padding(.horizontal, 24)
+                    .padding(.vertical, 12)
+                    .background(.blue)
+                    .foregroundStyle(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+            }
+        }
+        .padding(.top, 40)
     }
 }
 

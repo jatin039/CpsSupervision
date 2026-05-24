@@ -3,14 +3,8 @@ import LocalAuthentication
 
 @MainActor
 class BiometricService: ObservableObject {
-    @Published var isLocked: Bool = false
+    @Published var isLocked = false
     @Published var authError: String?
-
-    @Published var isAuthEnabled: Bool {
-        didSet {
-            UserDefaults.standard.set(isAuthEnabled, forKey: Constants.UserDefaultsKey.biometricEnabled)
-        }
-    }
 
     var biometricType: LABiometryType {
         let ctx = LAContext()
@@ -36,21 +30,22 @@ class BiometricService: ObservableObject {
     }
 
     init() {
-        self.isAuthEnabled = UserDefaults.standard.bool(forKey: Constants.UserDefaultsKey.biometricEnabled)
-        if isAuthEnabled {
-            self.isLocked = true
-        }
+        // Lock on startup if onboarding was already completed
+        isLocked = UserDefaults.standard.bool(forKey: Constants.UserDefaultsKey.hasCompletedOnboarding)
+    }
+
+    func lock() {
+        isLocked = true
     }
 
     func authenticate() {
         let ctx = LAContext()
         var error: NSError?
-
         guard ctx.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) else {
+            // Device has no passcode set — allow access
             isLocked = false
             return
         }
-
         ctx.evaluatePolicy(
             .deviceOwnerAuthentication,
             localizedReason: "Access your supervision logs"
@@ -64,10 +59,5 @@ class BiometricService: ObservableObject {
                 }
             }
         }
-    }
-
-    func lock() {
-        guard isAuthEnabled else { return }
-        isLocked = true
     }
 }

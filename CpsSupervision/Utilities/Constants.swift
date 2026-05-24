@@ -61,7 +61,7 @@ enum Constants {
     }
 
     enum UserDefaultsKey {
-        static let biometricEnabled = "biometricEnabled"
+        static let hasCompletedOnboarding = "hasCompletedOnboarding"
         static let currentUserName = "currentUserName"
         static let exportIncludePhotos = "exportIncludePhotos"
     }

@@ -45,7 +45,13 @@ struct LockView: View {
             Spacer()
         }
         .padding()
-        .onAppear { biometricService.authenticate() }
+        .onAppear {
+            // Delay ensures the view is fully rendered before the
+            // system permission dialog appears on top of it
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                biometricService.authenticate()
+            }
+        }
     }
 }
 

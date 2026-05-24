@@ -47,13 +47,17 @@ struct SettingsView: View {
 
     private var securitySection: some View {
         Section {
-            Toggle(isOn: $biometricService.isAuthEnabled) {
-                Label("Require \(biometricService.biometricName)", systemImage: biometricService.biometricSystemImageName)
+            HStack {
+                Label(biometricService.biometricName, systemImage: biometricService.biometricSystemImageName)
+                Spacer()
+                Text("Always On")
+                    .foregroundStyle(.secondary)
+                    .font(.subheadline)
             }
         } header: {
             Text("Security")
         } footer: {
-            Text("When enabled, \(biometricService.biometricName) is required to open the app.")
+            Text("\(biometricService.biometricName) is required every time the app opens or returns from the background to protect sensitive records.")
         }
     }
 
