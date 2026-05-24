@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E03C371E384E06AC2FB5F5 /* SharingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F16ABB380584FF4DD92BCA9 /* SharingService.swift */; };
+		044A04ABD7365CEC5AD27238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1F5A79B478ADCEF3EDB6FD /* Assets.xcassets */; };
+		08C42DAD336F023934FE7D04 /* CpsSupervisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649B6328B69E739C07BAF09 /* CpsSupervisionTests.swift */; };
+		0F9816FDDD86C0A5F37DCA11 /* Incident+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89866107666AF093550CE47B /* Incident+Extensions.swift */; };
+		17804E78EBB32D44D14EE378 /* SupervisionLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3724A3E5264253905A1498 /* SupervisionLog+Extensions.swift */; };
+		1D43BC6DD2ED938865780DCA /* Supervisor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEDB7622674B9026D076948 /* Supervisor+Extensions.swift */; };
+		2DA7071C3ECC4FBCFA2C2BDE /* SupervisorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BA2072AB8116267F2BAA0 /* SupervisorDetailView.swift */; };
+		2FD7EA01818A5E7DB3EEE3E1 /* Child+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E58D134A2AC4307B6F45AD /* Child+Extensions.swift */; };
+		3DE866DB55095E5FD0D017B0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F81CCC04FBFF0B3A181D8 /* DashboardView.swift */; };
+		4BDB7044EC7878936A1AFA5D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE64A024AA17882B5E80AE5 /* Color+Extensions.swift */; };
+		4D18E7437085C881F0C248A4 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB9C3BE5027D01F1A6E203 /* PeopleView.swift */; };
+		5C35DE33FB2C4B49F2AA1E77 /* LogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F9DB3FFF8578309AEB163 /* LogsViewModel.swift */; };
+		64F428E9098D97D547BF4E4C /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F14B2813ADB899B1C16976 /* ExportService.swift */; };
+		75C919D6B378B75479113706 /* LogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D81783D0B214F99262E31FA /* LogDetailView.swift */; };
+		7C76C26719C645FC37360681 /* LogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42DB2C83E335800B435E6C /* LogListView.swift */; };
+		80D33F0E7BB3809491682D61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BDB66012B95C18BC02F798 /* Constants.swift */; };
+		87FD97021B02F35736DC7296 /* AddSupervisorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C52DF1D259CCBF757D0CB8 /* AddSupervisorView.swift */; };
+		91993EEF9FBBCF88D2AF87E3 /* BiometricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FF2FC42EED42203566A800 /* BiometricService.swift */; };
+		955FD09EFF560EDEEE42346C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF7C3E624C0D38F961095B /* ContentView.swift */; };
+		961FD4B2EBAB61ACE7B392A7 /* CpsSupervision.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A360A93672D04BBD6482A5CC /* CpsSupervision.xcdatamodeld */; };
+		96ED4A8CB39FFA154B957006 /* NewLogEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC006995A5CB5773F8B13 /* NewLogEntryView.swift */; };
+		97AA5972C1DBF08D971D2F56 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3A69CD0C42D33956B233A /* Date+Extensions.swift */; };
+		990391C11B76CF0F1112013D /* CpsSupervisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC322DC50EFD4B84B802C97F /* CpsSupervisionApp.swift */; };
+		AFFB656FACC774A3F1428B6A /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BE07AC4FBCB3C1780308E3 /* LockView.swift */; };
+		C3EEC4DD94FF53D7D51B0A3F /* ChildDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A74B991DB7CC6B137EA45 /* ChildDetailView.swift */; };
+		CBC78FE64CC1717B53E78850 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E099E94B936BB12A6C68D /* DashboardViewModel.swift */; };
+		F38B82C201299DE4943ABB64 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0626C19DC8A732F3F0E07 /* Persistence.swift */; };
+		F3DB8B7802E5A7475C520688 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2F89BF3D987D0C1721929C /* SettingsView.swift */; };
+		FF45B4F7CD419BB8D6893179 /* AddChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E894406E95CDC751C619689 /* AddChildView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46A21C4F9D182F677E9FCD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A2F0367E747A952175C8A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2C2F76C59276FBEB433F0BE;
+			remoteInfo = CpsSupervision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14BDB66012B95C18BC02F798 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1649B6328B69E739C07BAF09 /* CpsSupervisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpsSupervisionTests.swift; sourceTree = "<group>"; };
+		1C64343433DA35C25AAE2138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2D2AC006995A5CB5773F8B13 /* NewLogEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogEntryView.swift; sourceTree = "<group>"; };
+		2D81783D0B214F99262E31FA /* LogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailView.swift; sourceTree = "<group>"; };
+		33FF2FC42EED42203566A800 /* BiometricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricService.swift; sourceTree = "<group>"; };
+		3DEDB7622674B9026D076948 /* Supervisor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Supervisor+Extensions.swift"; sourceTree = "<group>"; };
+		4BE64A024AA17882B5E80AE5 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		4C3A74B991DB7CC6B137EA45 /* ChildDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildDetailView.swift; sourceTree = "<group>"; };
+		5D2F89BF3D987D0C1721929C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5E894406E95CDC751C619689 /* AddChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildView.swift; sourceTree = "<group>"; };
+		64BF7C3E624C0D38F961095B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		712BA2072AB8116267F2BAA0 /* SupervisorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorDetailView.swift; sourceTree = "<group>"; };
+		75C3A69CD0C42D33956B233A /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		77C52DF1D259CCBF757D0CB8 /* AddSupervisorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSupervisorView.swift; sourceTree = "<group>"; };
+		89866107666AF093550CE47B /* Incident+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Incident+Extensions.swift"; sourceTree = "<group>"; };
+		8F16ABB380584FF4DD92BCA9 /* SharingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingService.swift; sourceTree = "<group>"; };
+		9ACB9C3BE5027D01F1A6E203 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		9B3724A3E5264253905A1498 /* SupervisionLog+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SupervisionLog+Extensions.swift"; sourceTree = "<group>"; };
+		9C9E099E94B936BB12A6C68D /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		A295E840226401D9EB250952 /* CpsSupervision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CpsSupervision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BE07AC4FBCB3C1780308E3 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		BC322DC50EFD4B84B802C97F /* CpsSupervisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpsSupervisionApp.swift; sourceTree = "<group>"; };
+		C71EFFCAB0D8969520371CC3 /* CpsSupervisionTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CpsSupervisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B0626C19DC8A732F3F0E07 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CB1F5A79B478ADCEF3EDB6FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7E58D134A2AC4307B6F45AD /* Child+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+Extensions.swift"; sourceTree = "<group>"; };
+		E96F9DB3FFF8578309AEB163 /* LogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewModel.swift; sourceTree = "<group>"; };
+		EC0F81CCC04FBFF0B3A181D8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		EE9F2809AD58774DFE58A77D /* CpsSupervision.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CpsSupervision.xcdatamodel; sourceTree = "<group>"; };
+		F4F14B2813ADB899B1C16976 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		FE883EF9D41B5DF6E59E1849 /* CpsSupervision.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CpsSupervision.entitlements; sourceTree = "<group>"; };
+		FF42DB2C83E335800B435E6C /* LogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		02161B5ADA7F1F3FA5BA81DA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5D2F89BF3D987D0C1721929C /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		15BFB02A5D8DB19A3C2FA85A = {
+			isa = PBXGroup;
+			children = (
+				4E2ACE4944A4F55438E4BDE4 /* CpsSupervision */,
+				8D3ACD290B3CE4875462DF15 /* CpsSupervisionTests */,
+				9C666C208B22BB199A6E94B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38A44A849A723D2C9E6D9FE9 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				2D81783D0B214F99262E31FA /* LogDetailView.swift */,
+				FF42DB2C83E335800B435E6C /* LogListView.swift */,
+				2D2AC006995A5CB5773F8B13 /* NewLogEntryView.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		411B183808603E1DCA1AD18F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A360A93672D04BBD6482A5CC /* CpsSupervision.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41CDEE136E0A00EBE1226120 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33FF2FC42EED42203566A800 /* BiometricService.swift */,
+				F4F14B2813ADB899B1C16976 /* ExportService.swift */,
+				8F16ABB380584FF4DD92BCA9 /* SharingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4DD4540F22BB29ABBAD9D327 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				14BDB66012B95C18BC02F798 /* Constants.swift */,
+				52C635462918D843BDCA69F2 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4E2ACE4944A4F55438E4BDE4 /* CpsSupervision */ = {
+			isa = PBXGroup;
+			children = (
+				CB1F5A79B478ADCEF3EDB6FD /* Assets.xcassets */,
+				FE883EF9D41B5DF6E59E1849 /* CpsSupervision.entitlements */,
+				BC322DC50EFD4B84B802C97F /* CpsSupervisionApp.swift */,
+				1C64343433DA35C25AAE2138 /* Info.plist */,
+				C7B0626C19DC8A732F3F0E07 /* Persistence.swift */,
+				8C77E25C000C25478C0355BA /* ModelExtensions */,
+				411B183808603E1DCA1AD18F /* Models */,
+				41CDEE136E0A00EBE1226120 /* Services */,
+				4DD4540F22BB29ABBAD9D327 /* Utilities */,
+				65B555F7F93A769DA883C9BA /* ViewModels */,
+				C6D17ABD98E76CE7FFB980FE /* Views */,
+			);
+			path = CpsSupervision;
+			sourceTree = "<group>";
+		};
+		52C635462918D843BDCA69F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BE64A024AA17882B5E80AE5 /* Color+Extensions.swift */,
+				75C3A69CD0C42D33956B233A /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6242BAAE0D7731AE83FECBEA /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				EC0F81CCC04FBFF0B3A181D8 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		65B555F7F93A769DA883C9BA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9C9E099E94B936BB12A6C68D /* DashboardViewModel.swift */,
+				E96F9DB3FFF8578309AEB163 /* LogsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8C77E25C000C25478C0355BA /* ModelExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7E58D134A2AC4307B6F45AD /* Child+Extensions.swift */,
+				89866107666AF093550CE47B /* Incident+Extensions.swift */,
+				9B3724A3E5264253905A1498 /* SupervisionLog+Extensions.swift */,
+				3DEDB7622674B9026D076948 /* Supervisor+Extensions.swift */,
+			);
+			path = ModelExtensions;
+			sourceTree = "<group>";
+		};
+		8D3ACD290B3CE4875462DF15 /* CpsSupervisionTests */ = {
+			isa = PBXGroup;
+			children = (
+				1649B6328B69E739C07BAF09 /* CpsSupervisionTests.swift */,
+			);
+			path = CpsSupervisionTests;
+			sourceTree = "<group>";
+		};
+		9C666C208B22BB199A6E94B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A295E840226401D9EB250952 /* CpsSupervision.app */,
+				C71EFFCAB0D8969520371CC3 /* CpsSupervisionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6D17ABD98E76CE7FFB980FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64BF7C3E624C0D38F961095B /* ContentView.swift */,
+				B0BE07AC4FBCB3C1780308E3 /* LockView.swift */,
+				6242BAAE0D7731AE83FECBEA /* Dashboard */,
+				38A44A849A723D2C9E6D9FE9 /* Logs */,
+				E86BA4C5A28134A9EDE9BEE1 /* People */,
+				02161B5ADA7F1F3FA5BA81DA /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E86BA4C5A28134A9EDE9BEE1 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				5E894406E95CDC751C619689 /* AddChildView.swift */,
+				77C52DF1D259CCBF757D0CB8 /* AddSupervisorView.swift */,
+				4C3A74B991DB7CC6B137EA45 /* ChildDetailView.swift */,
+				9ACB9C3BE5027D01F1A6E203 /* PeopleView.swift */,
+				712BA2072AB8116267F2BAA0 /* SupervisorDetailView.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AF92A58C2F42D8F68332A9E /* CpsSupervisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA50DDF253273F1CDE42F56 /* Build configuration list for PBXNativeTarget "CpsSupervisionTests" */;
+			buildPhases = (
+				C2F6EE7D0F6E80C70E65E2CC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				856E94A9DA4A15908FE3346C /* PBXTargetDependency */,
+			);
+			name = CpsSupervisionTests;
+			packageProductDependencies = (
+			);
+			productName = CpsSupervisionTests;
+			productReference = C71EFFCAB0D8969520371CC3 /* CpsSupervisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2C2F76C59276FBEB433F0BE /* CpsSupervision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC32BE768465F5EA5672A4B /* Build configuration list for PBXNativeTarget "CpsSupervision" */;
+			buildPhases = (
+				DBB7E0ACF00A90C1816A2BB8 /* Sources */,
+				8D955C85FD4E4FB5DC345EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CpsSupervision;
+			packageProductDependencies = (
+			);
+			productName = CpsSupervision;
+			productReference = A295E840226401D9EB250952 /* CpsSupervision.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2A2F0367E747A952175C8A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 070ED1A1AFE2A7E85A5DAB22 /* Build configuration list for PBXProject "CpsSupervision" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 15BFB02A5D8DB19A3C2FA85A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9C666C208B22BB199A6E94B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2C2F76C59276FBEB433F0BE /* CpsSupervision */,
+				3AF92A58C2F42D8F68332A9E /* CpsSupervisionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D955C85FD4E4FB5DC345EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044A04ABD7365CEC5AD27238 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2F6EE7D0F6E80C70E65E2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C42DAD336F023934FE7D04 /* CpsSupervisionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB7E0ACF00A90C1816A2BB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF45B4F7CD419BB8D6893179 /* AddChildView.swift in Sources */,
+				87FD97021B02F35736DC7296 /* AddSupervisorView.swift in Sources */,
+				91993EEF9FBBCF88D2AF87E3 /* BiometricService.swift in Sources */,
+				2FD7EA01818A5E7DB3EEE3E1 /* Child+Extensions.swift in Sources */,
+				C3EEC4DD94FF53D7D51B0A3F /* ChildDetailView.swift in Sources */,
+				4BDB7044EC7878936A1AFA5D /* Color+Extensions.swift in Sources */,
+				80D33F0E7BB3809491682D61 /* Constants.swift in Sources */,
+				955FD09EFF560EDEEE42346C /* ContentView.swift in Sources */,
+				961FD4B2EBAB61ACE7B392A7 /* CpsSupervision.xcdatamodeld in Sources */,
+				990391C11B76CF0F1112013D /* CpsSupervisionApp.swift in Sources */,
+				3DE866DB55095E5FD0D017B0 /* DashboardView.swift in Sources */,
+				CBC78FE64CC1717B53E78850 /* DashboardViewModel.swift in Sources */,
+				97AA5972C1DBF08D971D2F56 /* Date+Extensions.swift in Sources */,
+				64F428E9098D97D547BF4E4C /* ExportService.swift in Sources */,
+				0F9816FDDD86C0A5F37DCA11 /* Incident+Extensions.swift in Sources */,
+				AFFB656FACC774A3F1428B6A /* LockView.swift in Sources */,
+				75C919D6B378B75479113706 /* LogDetailView.swift in Sources */,
+				7C76C26719C645FC37360681 /* LogListView.swift in Sources */,
+				5C35DE33FB2C4B49F2AA1E77 /* LogsViewModel.swift in Sources */,
+				96ED4A8CB39FFA154B957006 /* NewLogEntryView.swift in Sources */,
+				4D18E7437085C881F0C248A4 /* PeopleView.swift in Sources */,
+				F38B82C201299DE4943ABB64 /* Persistence.swift in Sources */,
+				F3DB8B7802E5A7475C520688 /* SettingsView.swift in Sources */,
+				02E03C371E384E06AC2FB5F5 /* SharingService.swift in Sources */,
+				17804E78EBB32D44D14EE378 /* SupervisionLog+Extensions.swift in Sources */,
+				1D43BC6DD2ED938865780DCA /* Supervisor+Extensions.swift in Sources */,
+				2DA7071C3ECC4FBCFA2C2BDE /* SupervisorDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		856E94A9DA4A15908FE3346C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2C2F76C59276FBEB433F0BE /* CpsSupervision */;
+			targetProxy = 46A21C4F9D182F677E9FCD5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2316949EDA7A24A775A399CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpssupervision.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CpsSupervision.app/CpsSupervision";
+			};
+			name = Release;
+		};
+		27E6F4B14A81849D79AB570B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		90528D2AE433A0678DFC6483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpssupervision.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CpsSupervision.app/CpsSupervision";
+			};
+			name = Debug;
+		};
+		924155C9572C10716FDBCC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CpsSupervision/CpsSupervision.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5PB745ULV9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CpsSupervision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpssupervision.app;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0FBBEFDEF7F6E13B29B6242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A11003B8B21FAFE0EADA0272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CpsSupervision/CpsSupervision.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5PB745ULV9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CpsSupervision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpssupervision.app;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		070ED1A1AFE2A7E85A5DAB22 /* Build configuration list for PBXProject "CpsSupervision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E6F4B14A81849D79AB570B /* Debug */,
+				A0FBBEFDEF7F6E13B29B6242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0AC32BE768465F5EA5672A4B /* Build configuration list for PBXNativeTarget "CpsSupervision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A11003B8B21FAFE0EADA0272 /* Debug */,
+				924155C9572C10716FDBCC8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ADA50DDF253273F1CDE42F56 /* Build configuration list for PBXNativeTarget "CpsSupervisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90528D2AE433A0678DFC6483 /* Debug */,
+				2316949EDA7A24A775A399CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A360A93672D04BBD6482A5CC /* CpsSupervision.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE9F2809AD58774DFE58A77D /* CpsSupervision.xcdatamodel */,
+			);
+			currentVersion = EE9F2809AD58774DFE58A77D /* CpsSupervision.xcdatamodel */;
+			path = CpsSupervision.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F2A2F0367E747A952175C8A7 /* Project object */;
+}
