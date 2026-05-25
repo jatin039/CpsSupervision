@@ -37,11 +37,8 @@ struct CpsSupervisionApp: App {
             guard hasCompletedOnboarding else { return }
             if newPhase == .background {
                 biometricService.lock()
-            } else if newPhase == .active && biometricService.isLocked {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                    biometricService.authenticate()
-                }
             }
+            // Authentication is triggered by LockView.onAppear when isLocked becomes true
         }
     }
 }
