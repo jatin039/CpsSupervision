@@ -37,6 +37,15 @@ targets:
           UIColorName: systemBackground
         UIApplicationSupportsMultipleScenes: false
         CKSharingSupported: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
 
   CpsSupervisionTests:
     type: bundle.unit-test
